@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    background-color: lightgray;
+    height: 100vh;
+    padding: 2.5vh;
+}
+#menu {
+    background-color: gray;
+    height: 10vh;
+    margin-bottom: 5vh;
+    padding-top: 20px;
+}
+#main {
+    background-color: gray;
+    height: 80vh;
+    padding: 10px;
+}
+#osztalyvalaszto h1, #kuldetesek h1 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.col-sm-3 {
+    background-color: lightgray;
+    margin: 0 auto;
+}
+.col-sm-3 img {
+    width: 100%;
+}
+.col-sm-3 ul {
+    text-align: center;
+    list-style-type: none;
+}
+.col-sm-3 h2 {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+#kep {
+    margin: auto;
+    float: left;
+    height: 50vh;
+}
+table {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin-right: 30px;
+}
+td {
+    padding: 10px;
+}
+#progress {
+    width: 100%;
+    margin: auto;
+    height: 10px;
+    background-color: black;
+    float: left;
+    margin-top: 10px;
+}
+#bar {
+    width: 0%;
+    background-color: lightgreen;
+    float: left;
+    height: 100%;
+}
+.buttons {
+    cursor: pointer;
+}
+.col-sm-4 {
+    margin: 0 auto;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#kuldetes {
+    background-color: lightgray;
+}
+#story {
+    background-color: lightgray;
+}
+#harcgomb {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+#harcvege {
+    width: 100px;
+}

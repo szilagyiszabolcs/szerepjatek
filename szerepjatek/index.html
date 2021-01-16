@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>Játék</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <div class="row">
+                <div class="col-sm-4" onclick="valtas(1)">Karakter</div>
+                <div class="col-sm-4" onclick="valtas(2)">Küldetések</div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="osztalyvalaszto">
+                <h1>Válassz osztályt!</h1>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h1>Harcos</h1>
+                        <img src="harcos.jpeg">
+                        <h1>Kezdő értékek:</h1>
+                        <ul>
+                            <li>Sebzés - 12</li>
+                            <li>Védekezés - 14</li>
+                            <li>Életerő - 60</li>
+                        </ul>
+                        <h2 onclick="OsztalyValasztas(1)">Kiválasztom!</h2>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h1>Démonvadász</h1>
+                        <img src="demonvadasz.jpg">
+                        <h1>Kezdő értékek:</h1>
+                        <ul>
+                            <li>Sebzés - 16</li>
+                            <li>Védekezés - 12</li>
+                            <li>Életerő - 50</li>
+                        </ul>
+                        <h2 onclick="OsztalyValasztas(2)">Kiválasztom!</h2>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h1>Tolvaj</h1>
+                        <img src="tolvaj.jpeg">
+                        <h1>Kezdő értékek:</h1>
+                        <ul>
+                            <li>Sebzés - 10</li>
+                            <li>Védekezés - 18</li>
+                            <li>Életerő - 50</li>
+                        </ul>
+                        <h2 onclick="OsztalyValasztas(3)">Kiválasztom!</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="karakter">
+                <img src="ures.jpg" id="kep">
+
+                <table>
+                    <tr>
+                        <td>Sebzés</td>
+                        <td id="sebzes">0</td>
+                        <td class="gomb" onclick="AddDmg()"><button>+</button></td>
+                    </tr>
+                    <tr>
+                        <td>Védekezés</td>
+                        <td id="vedekezes">0</td>
+                        <td class="gomb" onclick="AddDef()"><button>+</button></td>
+                    </tr>
+                    <tr>
+                        <td>Életerő</td>
+                        <td id="eletero">0</td>
+                        <td class="gomb" onclick="AddHp()"><button>+</button></td>
+                    </tr>
+                </table>
+
+                <div id="progress">
+                    <div id="bar"></div>
+                </div>
+            </div>
+
+            <div id="kuldetesek">
+                <h1>Küldetés</h1>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <table id="kuldetes">
+                            <tr>
+                                <td>Név</td>
+                                <td id="EnemyName"> </td>
+                            </tr>
+                            <tr>
+                                <td>Életerő</td>
+                                <td id="EnemyHp"> </td>
+                            </tr>
+                            <tr>
+                                <td>Sebzés</td>
+                                <td id="EnemyDmg"> </td>
+                            </tr>
+                            <tr>
+                                <td>Védekezés</td>
+                                <td id="EnemyDef"> </td>
+                            </tr>
+                            <tr>
+                                <td>Tapasztalat</td>
+                                <td id="EnemyXp"> </td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="fight()" id="harcgomb">Harc!</button></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-sm-8" id="story">
+                    </div>
+
+                </div>
+                <button onclick="harcvege()" id="harcvege">Harc vége</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
